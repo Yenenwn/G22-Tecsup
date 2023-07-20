@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+h1 {
+  color: rebeccapurple;
+}
+h2 {
+  color: #0000ff;
+}
+h3 {
+  color: rgb(227, 137, 135);
+}
+h4 {
+  color: hsl(7, 65%, 70%);
+}
+.container {
+  background-color: #bbb;
+  width: 20rem;
+  height: 10rem;
+  overflow: auto;
+}

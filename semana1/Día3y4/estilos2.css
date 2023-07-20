@@ -1,0 +1,21 @@
+/*
+Soy una mamá, avanzamos css en cascada
+*/
+
+
+section{
+    color: peru;
+}
+p{
+    color: blue;
+}
+
+/*
+si 2 reglas tienen el mismo nivel de especifidad 
+afectando a un mismo elemento, la última regla 
+es la que prevalece
+*/
+
+p{
+    color: rebeccapurple;
+}

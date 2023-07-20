@@ -1,0 +1,13 @@
+img{
+width: 8em;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+nav a:nth-child(2){
+margin-left: 10rem;
+}
+nav{
+    text-align: center;
+}

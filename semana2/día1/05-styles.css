@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    }
+    main{
+        min-height: 100vh;
+        border: 2px solid red;
+        background-image: url(OLiwis.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;;
+    }
+    section{
+color: aqua;
+    }

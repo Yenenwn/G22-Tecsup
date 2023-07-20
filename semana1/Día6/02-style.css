@@ -1,0 +1,32 @@
+ul > li:nth-child(5){
+    border: 1px solid brown;
+    border-radius: 4px;
+}
+
+ol > li:nth-child(even){
+    border: 1px solid greenyellow;
+    border-radius: 4px;
+}
+li:first-child{
+    background-color: #ccc;
+}
+li:last-child{
+    background-color: #555;
+}
+table{
+    border-collapse: collapse;
+}
+table > tbody > tr:nth-child(even){
+    background-color: #eaeaea;
+}
+/* Página "Adobe Color" para los colores*/
+tr > td,
+tr > th {
+    border: 1px solid #ccc;
+    padding: 9px;
+}
+tr > th {
+    background-color: blanchedalmond;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

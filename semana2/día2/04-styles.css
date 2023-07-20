@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  height: 60px;
+  background-color: #e5e5e5;
+  /* El border especifica primero el tamaño, luego el estilo y al final el color */
+  border: 5px dashed red;
+}
+
+.card {
+  min-height: 30rem;
+  width: 20rem;
+  border: 2px solid blue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-container {
+  height: 15rem;
+  border: 1px solid black;
+  /* los porcentajes solo se respetan cuando el elemento tiene el height definido */
+}
+.card .card-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 2rem;
+}
+
+.card-content p{
+    text-align: justify;
+}
+
+.card-content h4{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.caja{
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    outline: 5px solid brown;
+    outline-offset: 15px;
+    margin-left: 50px;
+}

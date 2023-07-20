@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.padre {
+  display: flex;
+  background-color: hsl(43, 82%, 89%);
+  height: 300px;
+  width: 700px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10px
+  ;
+  /*  El flex direction por defecto es row, eso quiere decir que
+    los elementos estaran en la misma linea*/
+  /* eN la direction row el eje principal es el x y en la column el
+    eje principal es el Y */
+  /*  la propiedad justify-content se aplica a un contenedor flexbox
+     y se utiliza para alinear y distribuir elementos flexibles a lo largo del eje principal del contenedor.  */
+  /* align-items alinea los elementos en el eje secundario */
+/* Si no hay ancho suficiente se crean tantas filas como sean necesarias
+es decir como en este caso puse align items, hay 2 filas y en cada fila se va abajo */
+  /* La propiedad flex-wrap esta en nowrap por defecto */
+/* gap permite controlar el espacio entre los elementos hijos de un contenedor
+sin dejar un margen adicional solo entrelos hijos */
+}
+.padre > div {
+  background-color: #fbb3b3;
+  /* margin: 5px; */
+  height: 50px;
+}
+.hijo-1 {
+  width: 100%;
+  /* al colocar estos px se le respeta los px
+    y el resto del contenido se respetaran los flex
+    repartidos en este caso en 4 */
+}
+.hijo-2 {
+  width: 80px;
+}
+.hijo-3 {
+  width: 80px;
+}
+/* ese flex 1 como son 4 hijos representaria
+    el 25% de todo, es decir se reparte en 4 partes iguales */
+.hijo-4 {
+  width: 80px;
+  /* aca como el flex es entonces el hijo 4 tendria
+    un mayor porcentaje para ocupar
+    el color del background */
+}
+.hijo-5 {
+  width: 80px;
+}
+.hijo-6 {
+  width: 80px;
+}
+.hijo-7 {
+  width: 80px;
+}
+.hijo-8 {
+  width: 80px;
+}
+.hijo-9 {
+  width: 80px;
+}

@@ -1,0 +1,55 @@
+html{
+    color-scheme: light dark;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+body{
+    font-family: systme-ui;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+header{
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+nav{
+    display: flex;
+    gap: 1rem;
+    background-color: #f4f4f4;
+    justify-content: space-evenly;
+}
+nav > a{
+    color: #222;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 30%;
+    background-color: beige;
+    padding: 20px
+}
+section{
+    flex: 70%;
+    background-color: khaki;
+    padding: 20px;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+@media screen and (max-width: 720px){
+    nav{
+        flex-direction: column;
+    }
+}

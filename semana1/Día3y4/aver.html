@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba formularios</title>
+</head>
+<body>
+    <header><h1>Formulario</h1></header>
+    <main>
+        <section>
+            <form>
+            <h2>Tabla</h2>
+            <table border="1">
+                <tr ><th colspan="2" bgcolor="yellow" style="color: rgb(255, 0, 51);">Registration Form</th>
+                </tr>
+                <tr><td bgcolor="sky blue"><label for="name">Enter name</label></td>
+                    <td bgcolor="sky blue"><input
+                        type="text" 
+                        id="name" 
+                        minlenght="3" 
+                        maxlenght="30"
+                        placeholder="Nombre">
+                    </td>
+                </tr>
+                <tr><td bgcolor="sky blue"><label for="contraseña">Enter Password</label></td>
+                    <td bgcolor="sky blue"><input 
+                        type="password" 
+                        id="contraseña"
+                        minlenght="8" 
+                        pattern="`^(?=.[a-z])(?=.[A-Z])"
+                        placeholder="contraseña"
+                        ></td></tr>
+                <tr><td bgcolor="sky blue"><label for="correo">Enter Address</label></td>
+                    <td bgcolor="sky blue"><input 
+                        ype="email" 
+                        id="correo"
+                        placeholder="correo"></td></tr>
+                
+                <tr><td bgcolor="sky blue">
+                    <p>Select Game</p>
+                    <td bgcolor="sky blue"><input type="checkbox" id="juego">
+                        <label for="">Hockey</label>
+                                                
+                        <br>
+                        
+                        <input type="checkbox" id="juego">
+                        <label for="juego">Football</label>
+                        <br>
+                        <input type="checkbox" id="juego">
+                        <label for="juego">Badminton</label>
+                        <br>
+                        <input type="checkbox" id="juego">
+                        <label for="juego">Cricket</label>
+                        <br>
+                        <input type="checkbox" id="juego">
+                        <label for="juego">Volleyball</label></td></tr>
+                        
+                <tr><td bgcolor="sky blue"><p>Gender</p></td>
+                    <td bgcolor="sky blue"><input checked type="radio" id="juego">
+                        <label for="juego">Male</label>
+                        
+                        <input type="radio" id="juego"  >
+                        <label for="juego">Female</label></td></tr>
+
+                <tr><td bgcolor="sky blue"><label for="pais">Select ur age</label></td>
+                    <td bgcolor="sky blue">
+                        <select name="seleccionar-pais" id="pais" required>
+                            <option value="">Select...</option>
+                            <option value="">Entre 10-20</option>
+                            <option value="">Entre 21-35</option>
+                            <option value="">De 35 - mas</option>
+                            </td></tr>
+                <tr><td bgcolor="sky blue"><label for="archivo">Select photo</label></td>
+                    <td bgcolor="sky blue">
+                        <input type="file" id="archivo"
+                        accept="image/png"></td></tr>
+                <tr>
+                    <td bgcolor="sky blue" colspan="2"align="center">
+                        <button name="button">Click me</button>
+                        <button type="reset">Restablecer</button>
+                        <button type="submit">Enviar</button></td></tr>
+                
+            </table>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

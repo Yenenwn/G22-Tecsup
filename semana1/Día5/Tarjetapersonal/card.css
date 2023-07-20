@@ -1,0 +1,18 @@
+body {
+  background-image: url(https://images5.alphacoders.com/117/thumb-1920-1172741.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img-principal{
+    border-radius: 80%;
+}
+.cartilla{
+    background-color:  hsla(225, 79%, 18%, 0.6);
+    width: 300px;
+    height: 600px;
+    border: solid black 1px;
+
+}
+

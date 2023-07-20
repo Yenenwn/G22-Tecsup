@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    body{
+        background-color: antiquewhite;
+     }
+}
+
+
+@media (min-width: 768px) {
+    body{
+        background-color: brown;
+     }
+}
+
+
+@media (min-width: 992px) {
+    body{
+        background-color: cadetblue;
+     }
+}
+
+@media (min-width:1200px) {
+    /* quiere deecir que de 1200px a mas va a cambiar a ese color,
+    como minimo el ancho sera 1200px y a partir de un mayor valor el color sra morado */
+ body{
+    background-color: blueviolet;
+ }
+}
+/* Mobile-first  y desktop-first: primero se hace el responsive para mobile y luego desktop */
+/* este estilo de ejemplo es mobile-first debido a que el color principal aparece en la version
+mas pequeña, osea en el ancho mas pequeño y va creciendo segun el ancho va aumentando */

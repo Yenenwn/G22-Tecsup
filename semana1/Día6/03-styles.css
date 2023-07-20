@@ -1,0 +1,51 @@
+/*elementos en bloque
+<div>
+<p>
+<h1>, <h2>, <h3>, etc. (encabezados)
+<ul>, <ol> (listas desordenadas y ordenadas)
+<li> (elementos de lista)
+<table> (tabla)
+<form> (formulario)
+<header>, <footer>, <section> (secciones estructurales)
+<nav> (navegación)
+<blockquote> (citas)*/
+/*
+<span>
+<a> (enlaces)
+<strong>, <em>, <i>, <b> (texto enfatizado)
+<img> (imágenes)
+<input> (entrada de formulario)
+<label> (etiquetas)
+<button> (botones)
+<br> (salto de línea)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+/*Propiedades de texto*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 3rem;
+}
+/* Valor por defecto es 16px
+1 rem = 16px--->font-size(html):16px
+*/
+h2 {
+  font-weight: 800;
+  font-family: "Fasthand";
+}
+
+p {
+  font-style: oblique;
+}
+
+.paragraph {
+  font: bold 1.5rem monospace;
+}

@@ -1,0 +1,24 @@
+.nav_main .link .hover {
+  color: red;
+}
+.nav_secondary .link .hover {
+  color: antiquewhite;
+}
+p.mitexto {
+  font-size: 20px;
+}
+.noticia{
+    border: 1px solid red;
+}
+/* ">"  .noticia_texto tiene que ser un hijo directo(primer nivel) de .noticia*/
+.noticia > .noticia_texto {
+  font-size: italic;
+  color: teal;
+}
+tbody > tr{
+    background-color: aqua;
+}
+/*Pseudoclases*/
+section > ul > li:nth-child(odd){
+    background-color: lightcoral;
+}

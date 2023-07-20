@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .progress__bar{
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .progress{
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    transition: width 1s ease-in-out;
+  }
+  .progress__bar:hover .progress{
+    width: 100%;
+  }
+  .progress__text{
+    position: absolute;
+    /* al colocarle position absolute este se coloca segun los ejes del padre con
+    position relative que seria la progress bar, ojo los ejes se cuentan
+    contando el width y height, es decir como le coloque esos valores
+    entonces al colocarle position absolute  el elemento se colocora
+    debajo de la esa barra, esos serian sus ejes, si no le colocara nada
+    se posicionaria en la esquina ya que no hay nada en el ancestro relative
+    NO OLIVAR ESO, y que tambien por defecto se coloca en la esquina supeior
+    luego ya le das valores*/
+    top: 50%;
+    left: 50%;
+    /* El texto Cargando, la esquina superior izquierda de la "C" se posicionara
+     de derecha a izquierda a la mitad respecto al ancestro relative 
+     hacia arriba*/
+    transform: translate(-50%, -50%); 
+    color: black;
+    font-weight: bold;
+    text-align: center; 
+  }

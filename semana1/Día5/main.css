@@ -1,0 +1,46 @@
+/* estilos por tag*/
+h1 {
+  color: brown;
+  background-color: antiquewhite;
+  font-size: 50px;
+}
+p {
+  color: peru;
+}
+div p{
+    color: red;
+}
+span {
+  color: blue;
+}
+/* selectores por clases*/
+.nombre {
+  color: blue;
+  text-align: left;
+  border: 5px solid red;
+}
+.pepe{
+    font-weight: bold; 
+}
+/* "*{} se utiliza para colocar a todos los tag selector global" */
+/*Selectores por ID*/
+#primary{
+  color: aquamarine;
+}
+
+/*Selectores por atributo*/
+input[type="text"]{
+  border: solid orange 3px;
+}
+input[type="number"]{
+  border: solid green 3px ;
+}
+
+/*Selector hermano adyacente*/
+h1 + p{
+  color: blue;
+}
+/*Selector general de hermano*/
+p ~ p{
+  font-size: 20px;
+}

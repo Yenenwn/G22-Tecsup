@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios - parte 1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formularios - Parte 1</h1>
+    </header>
+    <main>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+              <label for="input-nombres-apellidos">Nombres y apellidos:</label>
+              <input
+                id="input-nomobres-apellidos"
+                type="text"
+                name="nombres"
+                placeholder="colocatunombreaquí"
+                required
+                minlength="3"
+                maxlength="20"
+              />
+            </div>
+            <div>
+              <label for="input-dni">DNI</label>
+              <input
+                type="text"
+                id="input-dni"
+                required
+                pattern="\d{8}"
+                maxlength="8"
+                title="El DNI debe tener 8 dígitos"
+              />
+            </div>
+            <div>
+              <label for="input-edad">Edad:</label>
+              <input
+                id="input-edad"
+                type="number"
+                name="edad"
+                required
+                min="18"
+                max="60"
+                placeholder="Elija entre 18 y 60"
+              />
+            </div>
+            <div>
+              <label for="input-email">Coloque su correo:</label>
+              <input id="input-email" type="email" name="email" />
+            </div>
+            <div>
+              <label for="input-date">Fecha de nacimiento</label>
+              <input id="input-date" type="date" name="nacimiento" required />
+              <br />
+              <small style="color: #666"
+                >La fecha no debe ser mayor al año 2000</small
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de inscripción</legend>
+            <div>
+              <label for="input-pass">Contraseña:</label>
+              <input
+                id="input-pass"
+                type="password"
+                name="contra"
+                placeholder="mínimo 8 caracteres"
+              />
+            </div>
+            <div>
+              <label for="input-color">Elija su color favorito</label>
+              <input id="input-color" type="color" name="color" />
+            </div>
+            <div>
+              <label for="input-salario">Salario entre 1500 y 5000:</label>
+              <input
+                id="input-salario"
+                type="range"
+                min="1500"
+                max="5000"
+                name="salario"
+              />
+            </div>
+            <div>
+              <p>Hobbies</p>
+              <label for="chk-guitarra">Tocar la guitarra</label>
+              <input id="chk-guitarra" type="checkbox" name="chk-guitarra" />
+              <br />
+              <label for="chk-basket">Jugar al basket</label>
+              <input id="chk-basket" type="checkbox" name="chk-basket" />
+              <br />
+              <label for="chk-cocina">Cocinar</label>
+              <input id="chk-cocina" type="checkbox" name="chk-cocina" />
+            </div>
+            <div>
+              <p>Elija tipo de pago:</p>
+              <label for="rd-credito">Tarjeta de crédito</label>
+              <input
+                name="rd-pagos"
+                id="rd-credito"
+                type="radio"
+                checked
+                value="tc"
+              />
+              <br />
+              <label for="rd-yape">Yape</label>
+              <input name="rd-pagos" id="rd-yape" type="radio" value="yp" />
+              <br />
+              <label for="rd-contraentrega">Contraentrega</label>
+              <input
+                name="rd-pagos"
+                id="rd-contraentrega"
+                type="radio"
+                value="ct"
+              />
+            </div>
+            <div>
+              <p>Turno</p>
+              <label for="rd-mañana">Mañana</label>
+              <input
+                name="rd-turnos"
+                id="rd-mañana"
+                type="radio"
+                checked
+                value="mn"
+              />
+              <br />
+              <label for="rd-tarde">Tarde</label>
+              <input name="rd-turnos" id="rd-tarde" type="radio" value="td" />
+              <br />
+              <label for="rd-noche">Noche</label>
+              <input type="radio" name="rd-turnos" id="rd-noche" value="nc" />
+            </div>
+            <div>
+              <label for="select-pais">Elija país:</label>
+              <select name="pais" id="select-pais" required>
+                <option value="">Seleccione...</option>
+                <option value="pe">Perú</option>
+                <option value="bol">Bolivia</option>
+                <option value="ch">Chile</option>
+              </select>
+            </div>
+            <div>
+              <label for="txt-mensaje">Escriba su mensaje</label>
+              <textarea
+                name="mensaje"
+                id="txt-mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Utilice como máximo 100 caracteres..."
+                required
+                minlength="15"
+                maxlength="30"
+              ></textarea>
+            </div>
+            <div>
+              <label for="input-cv">Subir CV</label>
+              <input type="file" id="input-cv" accept="image/png, image/jpeg">
+            </div>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

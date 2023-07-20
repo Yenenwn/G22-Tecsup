@@ -1,0 +1,47 @@
+:root{
+--color-primary: #02bfb1;
+--color-secondary: #6edb6e;
+}
+/* La pseudoclase root es un selector que se utiliza para crear variables 
+en css */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  header, footer{
+    height: 60px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    border: 1px solid blue;
+    min-height: calc(100vh - 120px);
+    /* como minimo tiene que medir este valor, si tiene mas contenido lo puede tomar, 
+    se prepara para posibles desbordamientos */
+    display: flex;
+  }
+  aside{
+    outline: 1px solid peru;
+    width: 240px;
+    background-color: var(--color-secondary);
+  }
+  article{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    justify-content: center;
+    gap: 10px;
+    /* si es que no le doy una alineacion a los elementos en este caos img
+    trataran de ocupar todo el ancho y alto del contenedor, ya que por defecto esta en
+    stretch y eso hace que se llene todo, pero el align.tems y justify content eliminan eso */
+  }
+  img{
+    max-width: calc(calc(100% - 20px) / 3);
+    /* max-width: calc(100% / 3); */
+  }
+
+  
